@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Styling from "./components/Styling";
+import style from "../src/components/Styling.module.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>style project</h1>
+      <Styling />
+      <p className="txt">text app</p>
+      <p className={style.txtModule}>text app22</p>
     </div>
   );
 }
